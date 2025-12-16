@@ -1,0 +1,12 @@
+{
+  "name": "router",
+  "version": "1.0.0",
+  "description": "前端路由管理库",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --project ./config/tsconfig.json",
+    "watch": "tsc --watch --project ./config/tsconfig.json"
+  },
+  "author": "wwwzne",
+  "license": "ISC"
+}
