@@ -1,12 +1,25 @@
 {
-  "name": "router",
-  "version": "1.0.0",
-  "description": "前端路由管理库",
-  "main": "dist/index.js",
+  "name": "wz-router",
+  "version": "1.0.4",
+  "type": "module",
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "types": "./dist/main.d.ts"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc --project ./config/tsconfig.json",
-    "watch": "tsc --watch --project ./config/tsconfig.json"
-  },
-  "author": "wwwzne",
-  "license": "ISC"
+    "watch": "tsc --watch --project ./config/tsconfig.json",
+    "prepublishOnly": "npm run build"
+  }
 }
